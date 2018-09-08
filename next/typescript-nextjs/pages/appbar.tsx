@@ -10,7 +10,7 @@ export default class Appbar extends Component {
   render() {
     return (
       <div>
-        <AppBar position="static">
+        <AppBar position="static" color="primary">
           <Toolbar>
             <IconButton color="inherit" aria-label="Menu">
               <MenuIcon />
