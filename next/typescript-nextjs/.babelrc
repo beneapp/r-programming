@@ -1,0 +1,20 @@
+{
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "components": "./src/components",
+          "containers": "./src/containers",
+          "stores": "./src/stores",
+          "lib": "./src/lib",
+          "configs": "./src/configs"
+        }
+      }
+    ]
+  ]
+}
